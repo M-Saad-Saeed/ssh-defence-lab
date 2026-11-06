@@ -1,0 +1,4 @@
+Nov  4 18:00:00 ssh-defence-lab sshd[101]: Failed password for guess_target from 192.168.57.211 port 40001 ssh2
+Nov  4 18:00:01 ssh-defence-lab sshd-session[102]: Failed password for guess_target from 192.168.57.211 port 40002 ssh2
+Nov  4 18:00:02 ssh-defence-lab sshd-session[103]: Accepted publickey for legit_user from 192.168.57.212 port 40003 ssh2: ED25519 SHA256:SYNTHETIC
+Nov  4 18:00:03 ssh-defence-lab sshd-session[104]: Accepted password for guess_target from 192.168.57.211 port 40004 ssh2
