@@ -1,0 +1,14 @@
+.local/
+ssh_config
+evidence/
+results/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.vdi
+*.vmdk
+*.vbox*
+*.sav
+*.iso
+*.log
+!fixtures/filter-check.log

@@ -1,0 +1,25 @@
+{
+  "title": "Combined SSH password-guessing defence evaluation",
+  "scope": "One fixed offered guessing rate; four protection conditions; two source layouts",
+  "server": "192.168.57.210",
+  "ssh_port": 22,
+  "management_source": "192.168.57.1",
+  "guess_source": "192.168.57.211",
+  "genuine_source_by_layout": {"shared": "192.168.57.211", "separate": "192.168.57.212"},
+  "conditions": {
+    "A": {"native_penalties": false, "fail2ban": false},
+    "B": {"native_penalties": true, "fail2ban": false},
+    "C": {"native_penalties": false, "fail2ban": true},
+    "D": {"native_penalties": true, "fail2ban": true}
+  },
+  "main_scenarios": ["A-shared", "A-separate", "B-shared", "B-separate", "C-shared", "C-separate", "D-shared", "D-separate"],
+  "genuine_only_references": ["A", "B", "C", "D"],
+  "guessing_rate_per_second": null,
+  "genuine_interval_seconds": null,
+  "observation_seconds": null,
+  "common_connection_deadline_seconds": null,
+  "repetitions": null,
+  "timing_status": "Decide from a pilot after approval and counting/scheduling validation; not selected by this setup.",
+  "primary_outcomes": ["Distinct password guesses evaluated by server in observation window", "Percentage of scheduled genuine connections not completed by common deadline"],
+  "status": "Environment preparation; no research results"
+}

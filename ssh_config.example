@@ -1,0 +1,10 @@
+# Run from the project folder: ssh -F lab/ssh_config ssh-defence-lab
+Host ssh-defence-lab
+    HostName 192.168.57.210
+    User labadmin
+    IdentityFile "/absolute/path/to/lab/.local/labadmin_ed25519"
+    IdentitiesOnly yes
+    UserKnownHostsFile "/absolute/path/to/lab/.local/known_hosts"
+    StrictHostKeyChecking yes
+    ConnectTimeout 5
+    ServerAliveInterval 30
